@@ -1,0 +1,78 @@
+:root {
+  --primary-color: #09fcfd;
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  background-color: #000;
+  position: relative;
+}
+
+.information {
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  font-size: 32px;
+  z-index: 2;
+  position: relative;
+}
+
+.modal {
+  width: 100vw;
+  height: 100vh;
+  background-color: #000;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 3;
+  display: flex;
+  color: #fff;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal__content {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.modal__text {
+  font-size: 42px;
+  text-align: center;
+}
+
+.modal__button {
+  padding: 30px 15px;
+  background-color: transparent;
+  color: var(--primary-color);
+  border: 3px solid var(--primary-color);
+  cursor: pointer;
+  font-size: 42px;
+  margin-top: 20px;
+  outline: none;
+  transition: box-shadow 0.1s ease-in;
+}
+
+.modal__button:hover {
+  box-shadow: 0px 0px 20px 5px var(--primary-color);
+}
+
+.hide {
+  display: none;
+}
