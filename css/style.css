@@ -88,6 +88,7 @@ body {
   height: var(--size-unit);
   background-image: url("../images/enemy.png");
   animation: move-5-units-X var(--ships-animation-time) steps(5) forwards;
+  position: fixed;
 }
 
 .enemy--big {
@@ -95,6 +96,7 @@ body {
   height: calc(var(--size-unit) * 2);
   background-image: url("../images/enemy-big.png");
   animation: move-16-units-X var(--ships-animation-time) steps(8) forwards;
+  position: fixed;
 }
 
 .explosion {
@@ -117,6 +119,7 @@ body {
   background-size: cover;
   width: 12px;
   height: 24px;
+  position: absolute;
 }
 
 @keyframes move-8-units-X {
